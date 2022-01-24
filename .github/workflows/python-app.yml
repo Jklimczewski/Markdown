@@ -1,7 +1,5 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-- name: pylinter
-  uses: alexanderdamiani/pylinter@v1.4.0
 
 name: Python application
 
@@ -36,4 +34,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-  
+        
+  - name: pylinter
+  uses: alexanderdamiani/pylinter@v1.4.0
+
